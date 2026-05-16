@@ -1,0 +1,6 @@
+{
+  "name": "Steve Jobs by Walter Isaacson",
+  "description": "An interactive, animated book report presentation about Steve Jobs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+  }
+
+  body {
+    @apply bg-black text-[#F5F5F7] antialiased font-sans flex flex-col min-h-screen selection:bg-white/20 selection:text-white overflow-hidden;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAxOCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSAxdjE3LjVsNC0zLjUgMi41IDYgMy0xLTIuNS02aDQuNUwxIDF6IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+'), auto;
+  }
+}
+
+a, button, [role="button"], .cursor-pointer, [draggable] {
+  cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAxOCAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNyAwdjdINVY1SDN2OEgxdi00SDB2NmgxdjJoMnYyaDJ2Mmg1di0yaDJ2LTJoMnYtN2gtMlY2aC0yVjRoLThWMHoiIGZpbGw9ImJsYWNrIi8+PHBhdGggZD0iTTggMnY1SDZ2Mkg0VjdIMnY0SDF2NGgydjJoMnYyaDR2LTJoMnYtMmgydi01aC0yVjZoLTJWNEg4VjJ6IiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg=='), pointer;
+}
