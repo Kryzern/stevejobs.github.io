@@ -5,7 +5,7 @@ import * as THREE from 'three';
 
 export function MacModel() {
   const group = useRef<THREE.Group>(null);
-  const { scene } = useGLTF('/macintosh_classic_1991.glb');
+  const { scene } = useGLTF(import.meta.env.BASE_URL + 'macintosh_classic_1991.glb');
 
   scene.traverse((child) => {
     if ((child as any).isMesh) {
@@ -40,5 +40,5 @@ export function MacModel() {
   );
 }
 
-useGLTF.preload('/macintosh_classic_1991.glb');
+useGLTF.preload(import.meta.env.BASE_URL + 'macintosh_classic_1991.glb');
 
